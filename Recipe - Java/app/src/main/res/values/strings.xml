@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Recipes - Java</string>
+    <string name="title_foodstuff">Foodstuff</string>
+    <string name="title_recipe">Recipe</string>
+    <string name="title_menu">Menu</string>
+
+    <string name="lable_pick_restaurant">Pick your restaurant</string>
+    <string name="label_enter_foodstuff">Enter new foodstuff</string>
+    <string name="label_foodstuff_name">Foodstuff name:</string>
+    <string name="label_calories">Calories: </string>
+    <string name="label_protein">Protein: </string>
+    <string name="label_sugar">Sugar: </string>
+    <string name="label_fats">Fats: </string>
+    <string name="label_vitaminA">Vitamin A: </string>
+    <string name="label_vitaminC">Vitamin C: </string>
+    <string name="label_prep_time">Prep time:</string>
+    <string name="label_serves">Serves:</string>
+    <string name="label_nutri_values">Nutri values:</string>
+    <string name="label_insert_recipe">Insert new recipe</string>
+    <string name="label_recipe_name">Recipe name:</string>
+    <string name="label_level">Level:</string>
+    <string name="label_ingredients">Ingredients:</string>
+    <string name="label_recipe_count">Recipe count:</string>
+
+    <string name="placeholder_name">Name</string>
+    <string name="placeholder_value">Value</string>
+    <string name="placeholder_description">Description</string>
+    <string name="placeholder_search">Search</string>
+
+    <string name="button_submit">Submit</string>
+    <string name="button_easy">Easy</string>
+    <string name="button_medium">Medium</string>
+    <string name="button_hard">Hard</string>
+
+    <string name="check_box_good_for_diabetics">Good for diabetics</string>
+    <string name="check_box_sort_by_prep_time">Sort by prep time</string>
+
+
+    <string name="toast_foodstuff_added">Foodstuff added successfully!</string>
+    <string name="toast_recipe_added">Recipe added successfully!</string>
+
+
+    <string-array name="foodstuff_tabs">
+        <item>New foodstuff</item>
+        <item>Foodstuff list</item>
+    </string-array>
+
+</resources>

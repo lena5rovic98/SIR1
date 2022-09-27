@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+            android:id="@+id/restaurantImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginVertical="20dp"
+            android:src="@drawable/ic_recipe"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+            android:id="@+id/layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toTopOf="@id/restaurantImage"
+            app:layout_constraintBottom_toBottomOf="@id/restaurantImage"
+            app:layout_constraintStart_toEndOf="@id/restaurantImage"
+            app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+                android:id="@+id/recipeNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fruit salad"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/restaurantImage"/>
+
+        <TextView
+                android:id="@+id/recipeDescriptionText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Wash the fruit, then chop it finely"
+                app:layout_constraintTop_toBottomOf="@id/restaurantNameText"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                android:singleLine="true"
+                android:ellipsize="end"
+                app:layout_constraintStart_toEndOf="@id/restaurantImage"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+                android:id="@+id/recipePrepTimeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prep time: 2h"
+                app:layout_constraintTop_toBottomOf="@id/restaurantNameText"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/restaurantImage"/>
+
+        <TextView
+                android:id="@+id/recipeServesText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Serves: 4"
+                app:layout_constraintTop_toBottomOf="@id/restaurantNameText"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/restaurantImage"/>
+
+        <TextView
+                android:id="@+id/recipeLevelText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="This is easy"
+                app:layout_constraintTop_toBottomOf="@id/restaurantNameText"
+                android:textColor="@color/gray"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@id/restaurantImage"/>
+
+    </LinearLayout>
+
+    <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@color/gray"
+            app:layout_constraintTop_toBottomOf="@id/layout"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
