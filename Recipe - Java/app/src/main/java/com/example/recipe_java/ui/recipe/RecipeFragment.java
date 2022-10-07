@@ -80,7 +80,7 @@ public class RecipeFragment extends Fragment {
                         Foodstuff::getName
                 ).collect(Collectors.joining(
                         ", ",
-                        "Ingredients: ",
+                        "Sastojci: ",
                         ".")
                 ));
             }
@@ -128,7 +128,7 @@ public class RecipeFragment extends Fragment {
                 // final Recipe newRecipe = new Recipe(name, desc, prepTime, serves, recipeLevel, ingredients);
 
                 Recipe newRecipe = new Recipe(name, desc, prepTime, serves, recipeLevel, ingredients);
-                newRecipe = new Recipe("Spaghetti", "", 50, 4, Level.HARD, null);
+                newRecipe = new Recipe("Špagete", "", 50, 4, Level.HARD, null);
                 // newRecipe.setDescription("New description");
 
                 Data.selectedRestaurant.getCookBook().addRecipe(newRecipe);

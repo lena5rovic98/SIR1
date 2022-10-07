@@ -25,7 +25,7 @@ class RecipeAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         this.recipes.clear()
         for (recipe in recipes) {
             if (this.recipes.size % 3 == 0 && this.recipes.size != 0) {
-                this.recipes.add(Recipe("ad", null, 0, 0, Level.EASY, null))
+                this.recipes.add(Recipe("Reklama", null, 0, 0, Level.EASY, null))
             }
             this.recipes.add(recipe)
         }
@@ -56,8 +56,8 @@ class RecipeAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
         // Example: smart cast
         if (holder is RecipeViewHolder) {
             (holder as RecipeViewHolder).recipeName.text = recipe.name
-            holder.recipeDescription.text = recipe.description ?: "No description added"
-            holder.recipePrepTime.text = "${context.getString(R.string.label_prep_time)} ${recipe.preparationTime}mins"
+            holder.recipeDescription.text = recipe.description ?: "Bez opisa"
+            holder.recipePrepTime.text = "${context.getString(R.string.label_prep_time)} ${recipe.preparationTime}min"
             holder.recipeServes.text = "${context.getString(R.string.label_serves)} ${recipe.serves}"
 
             // Example: null safety
@@ -66,7 +66,7 @@ class RecipeAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             holder.itemView.setOnClickListener {
                 // Example: null safety - safe call
                 // Example: string template
-                val description = "Description is: ${if (recipe.description?.isEmpty() == true) "No description added" else recipe.description }, and it is for ${recipe.serves} people"
+                val description = "Description is: ${if (recipe.description?.isEmpty() == true) "Bez opisa" else recipe.description }, and it is for ${recipe.serves} people"
                 // Example: extension function
                 val prepTime = "Prep time: ${recipe.preparationTime.getStyledPreparationTime()}"
                 val serves = "Serves: ${recipe.serves * 2 / 2} "
@@ -77,7 +77,7 @@ class RecipeAdapter: RecyclerView.Adapter<RecyclerView.ViewHolder>() {
             // Example: Coroutines
             GlobalScope.launch {
                 delay(2000)
-                holder.adText.text = "Ad Ad Ad Ad Ad"
+                holder.adText.text = "Reklama Reklama Reklama Reklama"
             }
         }
     }

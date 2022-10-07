@@ -10,11 +10,11 @@ public enum Level {
     public String getDescription(Level level) {
         switch (level) {
             case EASY:
-                return "This recipe is very easy, you should try";
+                return "Recept je veoma jednostavan, trebalo bi da probaš";
             case HARD:
-                return "Very hard, be careful";
+                return "Veoma teško, budi pažljiv";
             case MEDIUM:
-                return "This is more complicated, pay attention!";
+                return "Ovo je komplikovanije, obrati pažnju!";
             default:
                 return "";
         }

@@ -86,7 +86,7 @@ public class Recipe {
     public String getStyledPreparationTime() {
         int hours = preparationTime / 60;
         int minutes = preparationTime % 60;
-        return "Preparation time: " + hours + "h and " + minutes + "min";
+        return "Vreme pripreme: " + hours + "h i " + minutes + "min";
     }
 
     public Boolean isAcceptableForDiabetes() {

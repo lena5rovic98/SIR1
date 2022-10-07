@@ -10,9 +10,9 @@ enum class Level {
     // Example: return value
     fun getDescription(): String {
         return when (this) {
-            EASY -> "This recipe is very easy, you should try"
-            MEDIUM -> "This is more complicated, pay attention!"
-            HARD -> "Very hard, be careful"
+            EASY -> "Recept je veoma jednostavan, trebalo bi da probaš"
+            MEDIUM -> "Veoma teško, budi pažljiv"
+            HARD -> "Ovo je komplikovanije, obrati pažnju!"
         }
     }
 }

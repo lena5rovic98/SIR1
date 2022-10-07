@@ -4,5 +4,5 @@ package com.example.recipe.extensions
 fun Int.getStyledPreparationTime(): String {
     val hours = this / 60
     val minutes = this % 60
-    return "Preparation time: ${hours}h and ${minutes}min"
+    return "Vreme pripreme: ${hours}h i ${minutes}min"
 }

@@ -23,7 +23,7 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     public void setRecipes(List<Recipe> recipes) {
         for (Recipe recipe: recipes) {
             if (this.recipes.size() % 3 == 0 && this.recipes.size() != 0) {
-                this.recipes.add(new Recipe("ad", "", 0, 0, Level.EASY, null));
+                this.recipes.add(new Recipe("Reklama", "", 0, 0, Level.EASY, null));
             }
             this.recipes.add(recipe);
         }
@@ -65,9 +65,9 @@ public class RecipeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String description = "Description is: ${if (recipe.description!!.isEmpty()) \"No description added\" else recipe.description }, and it is for ${recipe.serves} people";
-                    String prepTime = "Fruit salad prep time: ${recipe.preparationTime.getStyledPreparationTime()}";
-                    String serves = "Fruit salad serves: ${recipe.serves * 2 / 2} ";
+                    String description = "Opis: ${if (recipe.description!!.isEmpty()) \"Nema opisa\" else recipe.description }, i za ${recipe.serves} osoba";
+                    String prepTime = "Vreme pripreme: ${recipe.preparationTime.getStyledPreparationTime()}";
+                    String serves = "Broj porcija: ${recipe.serves * 2 / 2} ";
 
                     Toast.makeText(context, description + "\n" + prepTime + "\n" + serves, Toast.LENGTH_LONG).show();
                 }
