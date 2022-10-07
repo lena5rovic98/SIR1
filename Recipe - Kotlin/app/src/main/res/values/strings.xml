@@ -4,7 +4,7 @@
     <string name="title_recipe">Recepti</string>
     <string name="title_menu">Meni</string>
 
-    <string name="lable_pick_restaurant">Izaberi svoj restoran</string>
+    <string name="label_pick_restaurant">Izaberi svoj restoran</string>
     <string name="label_enter_foodstuff">Dodaj namirnicu</string>
     <string name="label_foodstuff_name">Naziv namirnice:</string>
     <string name="label_calories">Kalorije: </string>
